@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { AboutComponent } from './pages/about/about.component';
 import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
+import { PathNotFoundComponent } from './pages/path-not-found/path-not-found.component';
 
 export const routes: Routes = [
     { path: '', component: HomeComponent },
@@ -20,5 +21,6 @@ export const routes: Routes = [
                 (m) => m.LoginComponent
             );
         },
-    }
+    },
+    {path: '**', component: PathNotFoundComponent },  
 ];
