@@ -3,5 +3,13 @@
 <app-card 
     [imageUrl]="'https://picsum.photos/200/300'"
     [title]="'Card 1'"
+    (onClick)="handleOnClick($event)"
     [description]="'This is description for card 1.'">
+</app-card>
+
+<app-card 
+    [imageUrl]="'https://picsum.photos/200/300'"
+    [title]="'Card 2'"
+    (onClick)="handleOnClick($event)"
+    [description]="'This is description for card 2.'">
 </app-card>

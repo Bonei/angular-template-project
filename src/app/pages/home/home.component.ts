@@ -8,5 +8,7 @@ import { CardComponent } from "../../components/card/card.component";
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-
+  handleOnClick(event: boolean) {
+    console.log("Clicked on card", event);
+  }
 }
